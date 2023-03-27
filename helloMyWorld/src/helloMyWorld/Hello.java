@@ -6,6 +6,8 @@ public class Hello {
 		System.out.println("Hi everybody!");
 		
 		System.out.println("Training!");
+		
+		System.out.println("Third commit");
 
 	}
 
