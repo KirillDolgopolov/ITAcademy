@@ -17,14 +17,15 @@ public class Game {
 
 	static void ronda() {
 		int contadorRonda = 0;
+		boolean finalDeJuego=false;
 
-		do {
+		while (contadorRonda < jugadores.size() && !finalDeJuego ){
 			jugadores.get(contadorRonda).jugar(rev);
-
+			finalDeJuego=finalDeJuego(jugadores.get(contadorRonda));
 			System.out.println(jugadores.get(contadorRonda));
 			contadorRonda++;
 
-		} while (contadorRonda < jugadores.size() || finalDeJuego(jugadores.get(contadorRonda))==true);
+		} 
 
 	}
 
